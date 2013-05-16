@@ -251,7 +251,7 @@
                 <input type="text" name="id" autofocus required/>
                 <label>Password:    </label><input type="password" name="passwd" required/></br>
                 <input type="submit" value="IN"/><a href="" style="text-decoration:none; display:inline; padding-bottom:30px; 
-                color:white;">forgot password??</a>
+                color:white;">forget password??</a>
                 </br></br>
                 <a href="#" id="up" class="close" style="margin:0px 165px;padding:4px; text-decoration:none; background:white; color:indigo; " onmouseover="t(0)">SignUP</a>
                 <!--a href="" id="up"    onmouseover="t(0)">SignUp</a-->
