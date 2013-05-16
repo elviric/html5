@@ -1,0 +1,331 @@
+<!DOCTYPE HTML>
+    <html>
+        <head>
+            <title>App</title>
+            <style>
+                body
+                {
+                    background-color:brown;
+                }
+                
+                div.b
+                {
+                    width:100%;
+                    position:absolute;
+                }
+                div.logo
+                {
+                
+                 /*   background-color:#789;
+                    
+                    background-image:url("s.png");
+                    background-position: left;
+                    
+                    background-repeat: no-repeat;
+
+                    width: 100%;
+                    height: 30%;*/
+                    padding: 2px;
+                   
+                }
+                canvas.l
+                {
+                    
+                    display:block;
+                    top:0%;
+                    width:100%;
+                    position:relative;
+                    border:3px groove white;
+                    background-image:url("s.png");
+                    background-color:#789;
+                    background-position: left;
+                    
+                    background-repeat: no-repeat;
+                    -moz-background-size:25%;
+                     border: 4px solid white;                    
+                }
+                
+            div.con
+                {
+                    background: transparent;
+                    width: 59%;                
+                    left: 1%;
+                    position: absolute;
+                    
+                }
+            
+            div.c
+            {
+                background: #077;
+                width: 48%;
+                left: 0%;
+                padding: 2px;
+                position: absolute;
+                border: 4px solid white;
+            }
+            
+            div.cr
+            {
+                
+                background: brown;
+                width: 48%;
+                right:0%;
+                min-height:80%;
+                display:block;
+                position: absolute;
+                padding: 2px;
+                border: 4px solid white;
+                
+            }
+            img.dw
+            {
+                top:45%;
+                left:31%;
+                position:relative;
+                width:40%;
+                background:#790;
+                border:2px groove brown;
+            }
+            
+            div.right
+            {
+                background:white;
+                width: 32%;
+                border: 4px solid white;
+                right:0%;
+                text-align:center;
+                position: absolute;
+            /*  padding: 2px;
+            /*  border: 4px solid white;*/
+            }
+            
+                div.r1
+                {
+                
+                    border: 4px solid white;
+              /*    width: 100%;
+                    padding: 2px;*/
+                    background: indigo;
+                    text-align:center;
+                    position:relative;
+                    color:white;
+                    padding:10px 10px; 
+            
+            
+                    /*margin:0px 0px;*/
+                    border-radius:1%;
+                    -moz-border-radius:1%;
+                    /* Firefox 3.6 and earlier */
+
+                }
+                div.r2
+                {
+                    text-align:center;
+                    border: 4px solid white;
+                    padding:10px 10px; 
+                    background: orange;
+                    position:relative;
+                    display:none;
+               
+                }
+                
+                
+                form > input
+                {
+                    
+                    box-align: center;
+                    border:2px solid red;
+                    
+                }
+                label
+                {
+                    display:block;
+                    width:30%;
+                    border: 1px solid white;
+                    text-align:left;
+    
+                }
+                input
+                {
+                    display:block;
+                    width:70%;
+                    border: 1px solid white;
+                }
+                
+                input[type=submit]
+                {
+                    width:20%;
+                   margin:0px 3px;
+                   padding:5px;x
+                   background:white;
+                
+                   -webkit-border-radius:10%;
+                   border-bottom-left-radius:4%;
+                   border-bottom-right-radius:4%;
+                }
+                a.close
+                {
+                    border-top-left-radius:900px;
+                    border-top-right-radius:900px;
+                }
+                
+            
+            
+            
+            footer
+            {
+                background: white;
+                width:99%;
+                border-top: 1px solid brown;
+                position:fixed;
+                bottom: 0%;
+            }
+            </style>
+        </head>
+        <body>
+             
+            <canvas class="l" id="myCanvas"  width="1148" height="99"></canvas>
+            <script type="text/javascript">
+            
+                var c=document.getElementById("myCanvas");
+                var ctx=c.getContext("2d");
+                ctx.font="72px Showcard Gothic";
+                ctx.fillStyle="brown";
+                ctx.fillText("MDwnldr",250,95);
+        
+            </script>
+                
+                
+                
+    
+            <div class="con">
+                
+                <div class="c">
+                
+                    <img src="diw.png" class="dw"/>
+                    
+                </div>
+            <div class="cr">
+                
+                    kdkflsfs
+                    f</br>
+                    <p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
+                    </br>
+                    efffe</br>fs
+                    
+                  
+            </div>    
+            </div>
+            </div>
+            <div class="right">
+                <div class="r2" id="e" style="display:none;">
+                    <!-- hjhj -->
+                
+    <form>
+
+        <label>Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter the name" required></br>
+      
+        <label>Email address:</label>
+        <input type="email" id="email_addr" name="email_addr" placeholder="Enter the email_id" required></br>
+      
+        <label>Password:</label>
+        <input type="password" id="passwd" name="passwd" placeholder="Password" required></br>
+        
+        <label>Re-password:</label>
+        <input type="password" id="repass" name="repass" placeholder="Re-enter the above password" required oninput="check(this)"></br>
+      
+        <input type="submit" value="Register" />
+        
+    </form>
+    </br>
+    <a href="#" class="close" id="close" style="padding:4px; text-decoration:none; background:white; color:orange; " onmouseover="t(1)">CL^SE</a>
+                </div>
+                Sign IN
+                
+            <div class="r1">
+                    
+                    
+                <form>
+                <label>Email_id:</label>
+                <input type="text" name="id" autofocus required/>
+                <label>Password:    </label><input type="password" name="passwd" required/></br>
+                <input type="submit" value="IN"/><a href="" style="text-decoration:none; display:inline; padding-bottom:30px; 
+                color:white;">forgot password??</a>
+                </br></br>
+                <a href="#" id="up" class="close" style="margin:0px 165px;padding:4px; text-decoration:none; background:white; color:indigo; " onmouseover="t(0)">SignUP</a>
+                <!--a href="" id="up"    onmouseover="t(0)">SignUp</a-->
+        
+                
+                </form>
+            </div>
+                
+            <!--    <a href="" onclick="op(5)" style="text-decoration:none;" >Sign UP </a-->
+            
+            <!--span id="e" style="display:none;" onmouseover="t(1)">sexy bitch</span-->
+
+            <script type="text/javascript">
+            //window.onclick = initAll;
+            var di = document.getElementsByTagName('div');
+                    
+                         
+            function t(n)
+            {
+                if(n==0)
+                {
+                   // if(document.getElementById('close').style.display != 'block'
+                      // 
+                    if(document.getElementById('e').style.display != 'block')
+                    {
+                        //document.getElementById('close').style.display = 'block';
+                        document.getElementById('up').style.display = 'none';
+                        document.getElementById('e').style.display = 'block';
+                    }
+                }
+                else if(n==1)
+                {
+                    document.getElementById('up').style.display = 'block';
+                    document.getElementById('e').style.display = 'none';
+                }
+            }
+            
+             
+            function op(x)
+            {
+                
+                
+                    alert(di[x].getAttribute('id'));
+                    var d = di[x].style;
+                    alert(d.display);
+    
+                    if(d.display=="block")
+                    {
+                        d.display="none";
+                        alert(d.display+"dcs");
+                    }
+                    else if( d.display=="none")
+                    {
+                        d.display="inline";
+                        alert(d.display+"dcsds");
+
+                    }
+                
+                
+                 
+             }
+                
+            
+             
+            </script>
+            
+                <!-- hkhj-->
+                
+                </div>
+            
+            
+            </div>
+            
+        </body>
+        <footer> Elviric @ work</footer>
+    </html>
+    
